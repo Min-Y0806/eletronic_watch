@@ -11,8 +11,10 @@
     let _month = today.getMonth();
     let _date = today.getDate();
     let _day = today.getDay();
+    let _hours = today.getHours() < 10 ? "0" + today.getHours() : today.getHours();
+    let _minutes = today.getMinutes() < 10 ? "0" + today.getMinutes() : today.getMinutes()
     let _seconds = today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds()
-    let _time = today.getHours() + ":" + today.getMinutes() + ":" + _seconds;
+    let _time = _hours + ":" + _minutes + ":" + _seconds;
 
     let today_date = `${_month+1} ${_date}`
 
