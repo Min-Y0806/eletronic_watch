@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#clock::before {
+    content: '';
+    width: 7px;
+    height: 9px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    background-color: #e26d6f;
+    transform: translateY(-50%);
+}
+
+#clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    border-radius: 15px;
+    border: 5px solid #e26d6f;
+    padding: 15px;
+    background-color: #181818;
+    color: #fff;
+    z-index: 100;
+}
+
+#date {
+    font-size: 13px;
+}
+
+#day {
+    position: relative;
+    top: 20px;
+    left: 60px;
+    font-size: 14px;
+}
+
+#time {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.line {
+    width: 50px;
+    height: 100vh;
+    background-color: #e26d6f;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    margin-top: 20px;
+    background: black;
+}
